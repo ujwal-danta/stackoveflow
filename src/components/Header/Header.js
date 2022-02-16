@@ -3,14 +3,17 @@ import './css/Header.css'
 import SearchIcon from '@mui/icons-material/Search';
 import InboxIcon from '@mui/icons-material/Inbox';
 import { Avatar } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
     <header>
       <div className="header-container">
         <div className="header-left">
+          <Link to='/'>
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Stack_Overflow_logo.svg/220px-Stack_Overflow_logo.svg.png"
             alt='logo' />
+          </Link>
         </div>
         <div className="header-middle">
           <div className="header-search-container">
